@@ -1,0 +1,19 @@
+%h1 Listing task_users
+
+%table.table
+  %tr
+    %th Task
+    %th Group
+    %th
+    %th
+    %th
+  -if (@current_user)
+    - @task_users.where("group_type LIKE \"User\" AND group_id = ?",@current_user.id).each do |task_list|
+      %td= task_list.task.name  
+      %td= link_to 'Show', task_path(task_list.task)
+      -#%td= link_to 'Edit', edit_task_uspath(task_user)
+      %td= link_to 'Отвязаться от дела', task_list, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+-#= link_to 'New Task user', new_task_user_path

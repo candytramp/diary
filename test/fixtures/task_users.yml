@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task_id: 
+  group_id: 
+  group_type: Group
+
+two:
+  task_id: 
+  group_id: 
+  group_type: Group

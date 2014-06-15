@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @remark.user
+%p
+  %b Topic:
+  = @remark.topic
+%p
+  %b Description:
+  = @remark.description
+
+= link_to 'Edit', edit_remark_path(@remark)
+\|
+= link_to 'Back', remarks_path

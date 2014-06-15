@@ -1,0 +1,12 @@
+
+
+%p
+  %b User:
+  = @contact_list.user.first_name
+%p
+  %b Friend:
+  = @contact_list.friend
+
+= link_to 'Edit', edit_contact_list_path(@contact_list)
+\|
+= link_to 'Back', contact_lists_path

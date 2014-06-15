@@ -1,0 +1,9 @@
+.page-header
+  %h1 Авторизация
+=form_tag login_path do
+  .form-group
+    =text_field_tag :email, @user.try(:email), class: 'form-control', placeholder: User.human_attribute_name(:email)
+  .form-group
+    =password_field_tag :password, nil,  class: 'form-control', placeholder: User.human_attribute_name(:password)
+  .action
+    =submit_tag 'Войти', class: 'btn btn-primary'

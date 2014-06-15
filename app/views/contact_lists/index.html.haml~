@@ -1,0 +1,47 @@
+%h1 Listing contact_lists
+
+%table.table
+  %tr
+   
+    %th FriendType
+    %th FriendName
+    %th
+    %th
+    %th
+  -if (@current_user)
+    - @contact_lists.where("user_id = ?",@current_user.id).each do |contact_list|
+      %tr
+      
+        %td= contact_list.friend_type
+        %td= contact_list.friend.first_name
+        -if contact_list.friend_type == "Contact"
+          %td= link_to 'Показать', user_contact_path(@current_user,contact_list.friend)
+        -else
+          %td= link_to 'Показать', user_path(contact_list.friend) 
+        -#%td= link_to 'Edit', edit_contact_list_path(contact_list)
+        %td= link_to 'Destroy', contact_list, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+  .col-sm-6
+    
+    %form{action: "search", controller: "users", role: "search"}
+      .form-group
+        %label Искать среди существующих пользователей
+        %input#search_pattern.form-control{name: "search_pattern", placeholder: "Поиск", type: "text"}/
+      %button.btn.btn-default{type: "submit"} Найти
+  .col-sm-2
+    .pull-right
+      .form-group
+        %br
+          %br
+            %label ИЛИ
+  .col-sm-4  
+    .pull-right
+      .form-group
+        %label Если такого пользователя нет
+        %br   
+          = link_to 'Создать новый контакт', new_user_contact_path(@current_user), class: 'btn btn-primary' 
+
+-#= link_to 'Добавить новый контакт(пользователь не зарегистрирован)', new_contact_path, class: 'btn btn-primary'
+-#@current_user.contact_lists.create(Contact.new)
+-#@current_user.contact_lists.create(User.where(...))

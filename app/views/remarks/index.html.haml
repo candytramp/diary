@@ -1,0 +1,23 @@
+%h1 Listing remarks
+
+%table
+  %tr
+    %th User
+    %th Topic
+    %th Description
+    %th
+    %th
+    %th
+
+  - @remarks.each do |remark|
+    %tr
+      %td= remark.user
+      %td= remark.topic
+      %td= remark.description
+      %td= link_to 'Show', remark
+      %td= link_to 'Edit', edit_remark_path(remark)
+      %td= link_to 'Destroy', remark, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Remark', new_remark_path

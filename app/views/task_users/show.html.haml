@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Task:
+  = @task_user.task
+%p
+  %b Group:
+  = @task_user.group
+
+= link_to 'Edit', edit_task_user_path(@task_user)
+\|
+= link_to 'Back', task_users_path

@@ -1,0 +1,28 @@
+= raise [@user, @contact].inspect
+= form_for([@user, @contact]) do |f|
+  =error_messages_for @contact
+  .form-group 
+    =f.label :first_name
+    =f.text_field :first_name, class: 'form-control'
+  .form-group
+    =f.label :last_name
+    =f.text_field :last_name, class: 'form-control'
+  .form-group
+    =f.label :second_name
+    =f.text_field :second_name, class: 'form-control'     
+  .form-group
+    %div
+      %b=User.human_attribute_name(:male)
+    -User::SEX.each_with_index do |sex,i|
+      .radio-inline
+        %label
+          =f.radio_button :male, [true,false][i]
+          =sex
+  .form-group      
+    =f.label :email
+    =f.text_field :email, class: 'form-control'
+  .form-group
+    = f.label :phone
+    = f.text_field :phone, class: 'form-control'
+  .action
+    = f.submit nil, class: 'btn btn-primary'

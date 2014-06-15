@@ -1,0 +1,22 @@
+
+
+%p
+  %b First name:
+  = @contact.first_name
+%p
+  %b Last name:
+  = @contact.last_name
+%p
+  %b Second name:
+  = @contact.second_name
+%p
+  %b Email:
+  = @contact.email
+%p
+  %b Phone:
+  = @contact.phone
+  -usr=User.find(params[:user_id])
+
+= link_to 'Edit', edit_user_contact_path(usr,@contact)
+\|
+= link_to 'Back', contact_lists_path

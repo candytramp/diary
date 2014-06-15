@@ -1,0 +1,7 @@
+module UsersHelper
+  def user_sex_icon(user)
+    return if user.male.nil?
+    icon=user.male? ? 'male' : 'female'
+    fa_icon(icon)
+  end
+end

@@ -1,0 +1,19 @@
+= form_for @task do |f|
+  =error_messages_for @task
+  .form-group
+    = f.label :name
+    = f.text_field :name
+  .form-group 
+    = f.label :user
+    = f.text_field :user
+  .form-group
+    = f.label :place
+    = f.text_field :place
+  .form-group
+    = f.label :priority
+    = f.number_field :priority
+  .form-group
+    = f.label :date
+    = f.datetime_select :date
+  .form-action
+    = f.submit nil, class: 'btn btn-primary'

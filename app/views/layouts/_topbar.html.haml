@@ -1,0 +1,22 @@
+.navbar.navbar-default
+  .container
+    .navbar-header
+      =link_to t('app.name'), root_path,class: 'navbar-brand'
+    %ul.nav.navbar-nav
+      %li{class: ('active' if controller_name=='users')}=link_to "Пользователи",users_path
+      %li{class: ('active' if controller_name=='places')}=link_to "Места",places_path
+      %li{class: ('active' if controller_name=='tasks')}=link_to "Задачи",tasks_path
+      %li{class: ('active' if controller_name=='remarks')}=link_to "Заметки",remarks_path
+      %li{class: ('active' if controller_name=='contact_lists')}=link_to "Контактный лист",contact_lists_path
+      %li{class: ('active' if controller_name=='task_users')}=link_to "Участник мероприятий",task_users_path
+    %ul.nav.navbar-nav.navbar-right
+      -if @current_user
+        %li.dropdown
+          =link_to ?#,class: 'dropdown-toggle', data: {toggle: 'dropdown'} do
+            =@current_user.first_name
+            %span.caret
+          %ul.dropdown-menu
+            %li=link_to 'Выход',logout_path
+      -else
+        %li=link_to "Вход",login_path
+        %li=link_to "Регистрация",new_user_path

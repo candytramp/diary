@@ -1,0 +1,18 @@
+
+
+%p
+  %b User:
+  = @task.user.first_name
+%p
+  %b Place:
+  = @task.place.name
+%p
+  %b Priority:
+  = @task.priority
+%p
+  %b Date:
+  = @task.date
+
+= link_to 'Edit', edit_task_path(@task)
+\|
+= link_to 'Back', tasks_path

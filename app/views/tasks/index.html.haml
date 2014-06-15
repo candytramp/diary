@@ -1,0 +1,25 @@
+%h1 Мои дела
+
+%table.table-striped.table-condensed
+  %tr
+    %th Имя дела
+    %th Место проведения 
+    %th Приоритет выполнения 
+    %th Дата проведения
+    %th
+    %th
+    %th
+  -if (@current_user)
+    - @tasks.where("user_id = ?",@current_user.id).each do |task|
+      %tr
+        %td= task.name
+        %td= task.place.name
+        %td= task.priority
+        %td= task.date
+        %td= link_to 'Показать', task
+        %td= link_to 'Редактировать', edit_task_path(task)
+        %td= link_to 'Удалить', task, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'Новое дело', new_task_path
