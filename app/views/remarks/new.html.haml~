@@ -1,0 +1,4 @@
+%h1 Новая заметка
+= render 'form'
+
+= link_to 'Back', remarks_path, class: 'btn btn-default'

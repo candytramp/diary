@@ -1,0 +1,50 @@
+ru:
+
+  activerecord:
+    models:
+      contact: Контакт
+      contact_list: Контактный лист
+      place: Место
+      remark: Заметка
+      task: Задания
+      task_user: Участники
+      user: Пользователи
+    attributes:
+      contact:
+        first_name: Имя
+        last_name: Фамилия
+        second_name: Отчество
+        email: Почта
+        phone: Телефон
+        male: Пол
+      contact_list:
+        user: Хозяин
+        friend: Друг
+      place:
+        name: Название
+        address: Адрес
+        description: Описание
+      remark:
+        user: Хозяин
+        topic: Тема
+        description: Описание
+      task_user:
+        task: Дело
+        group: Приглашенные
+      task:
+        user: Хозяин
+        place: Место проведения
+        priority: Приоритет
+        date: Дата проведения
+        name: Название
+      user:
+        first_name: Имя
+        last_name: Фамилия
+        second_name: Отчество
+        male: Пол
+        birthday:День рождения
+        email:Почта
+        phone:Телефон
+        
+              
+          

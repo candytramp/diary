@@ -23,6 +23,25 @@
                     =fa_icon 'trash-o'    
                     
                     
+          
+            
+         
+%table
+  %tr
+    %th Topic
+    %th Description
+    %th
+    %th
+    %th
+  -if (@current_user)
+    - @remarks.where("user_id = ?",@current_user.id).each do |remark|
+      %tr
+        %td= remark.topic
+        %td= remark.description
+        %td= link_to 'Show', remark
+        %td= link_to 'Edit', edit_remark_path(remark)
+        %td= link_to 'Destroy', remark, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
 %br
 
 = link_to 'Новая заметка', new_remark_path, class: 'btn btn-primary'

@@ -4,7 +4,7 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
   def index
-    @tasks = Task.ujoin.all
+    @tasks = Task.ujoin.ordering.all
   end
 
   # GET /tasks/1
@@ -19,6 +19,12 @@ class TasksController < ApplicationController
 
   # GET /tasks/1/edit
   def edit
+  end
+  
+  def show_guests
+    @task=Task.find(params[:id])
+    @guest_list=@task.guests
+    render action: 'guest_list'
   end
 
   # POST /tasks

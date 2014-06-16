@@ -4,7 +4,7 @@ class RemarksController < ApplicationController
   # GET /remarks
   # GET /remarks.json
   def index
-    @remarks = Remark.all
+    @remarks = Remark.includes(:user).all
   end
 
   # GET /remarks/1
@@ -24,11 +24,12 @@ class RemarksController < ApplicationController
   # POST /remarks
   # POST /remarks.json
   def create
+ 
     @remark = Remark.new(remark_params)
 
     respond_to do |format|
       if @remark.save
-        format.html { redirect_to @remark, notice: 'Remark was successfully created.' }
+        format.html { redirect_to @remark, notice: 'Заметка была успешно создана.' }
         format.json { render :show, status: :created, location: @remark }
       else
         format.html { render :new }
@@ -42,7 +43,7 @@ class RemarksController < ApplicationController
   def update
     respond_to do |format|
       if @remark.update(remark_params)
-        format.html { redirect_to @remark, notice: 'Remark was successfully updated.' }
+        format.html { redirect_to @remark, notice: 'Заметка была успешно обновлена.' }
         format.json { render :show, status: :ok, location: @remark }
       else
         format.html { render :edit }
@@ -56,7 +57,7 @@ class RemarksController < ApplicationController
   def destroy
     @remark.destroy
     respond_to do |format|
-      format.html { redirect_to remarks_url, notice: 'Remark was successfully destroyed.' }
+      format.html { redirect_to remarks_url, notice: 'Заметка была успешно удалена.' }
       format.json { head :no_content }
     end
   end

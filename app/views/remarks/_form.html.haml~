@@ -5,7 +5,7 @@
     = f.label :topic
     = f.text_field :topic, class: 'form-control'
   .form-group
-    = f.hidden_field :user_id, :value=>@current_user.id
+    = f.hidden_field :user_id, @current_user.id.to_s
   .form-group
     = f.label :description
     = f.text_area :description, class: 'form-control'

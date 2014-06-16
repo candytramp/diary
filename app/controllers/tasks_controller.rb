@@ -20,6 +20,12 @@ class TasksController < ApplicationController
   # GET /tasks/1/edit
   def edit
   end
+  
+  def show_guests
+    @task=Task.find(params[:id])
+    @guest_list=@task.guests
+    render action: 'guest_list'
+  end
 
   # POST /tasks
   # POST /tasks.json

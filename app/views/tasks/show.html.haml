@@ -12,6 +12,7 @@
 %p
   %b Date:
   = @task.date
+= link_to 'Приглашенные участники', show_guests_task_path(@task)
 
 = link_to 'Edit', edit_task_path(@task)
 \|

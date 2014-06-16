@@ -17,7 +17,12 @@ class UsersController < ApplicationController
   def add
   #raise params.inspect
     @user=User.find(params[:id])
-    @current_user.partners.create(:friend=>@user)
+    if params[:data].to_i == 0 then
+      @current_user.partners.create(:friend=>@user)
+    else
+      @task=Task.find(params[:task_id].to_i)
+      @task.guests.create(:group=>@user)
+    end      
     render action: 'show'    
   end
 

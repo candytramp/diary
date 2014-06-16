@@ -8,4 +8,4 @@
 
 = link_to 'Редактировать', edit_remark_path(@remark), class: 'btn btn-default'
 \|
-= link_to 'Вернуться', remarks_path, class: 'btn btn-default'
+= link_to 'Вернуться', remarks_path

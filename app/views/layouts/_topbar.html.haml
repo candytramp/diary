@@ -1,7 +1,7 @@
 .navbar.navbar-default
   .container
     .navbar-header
-      =link_to t('app.name'), root_path,class: 'navbar-brand'
+      =link_to t('Ежедневник'), root_path,class: 'navbar-brand'
     %ul.nav.navbar-nav
       %li{class: ('active' if controller_name=='users')}=link_to "Пользователи",users_path
       %li{class: ('active' if controller_name=='places')}=link_to "Места",places_path

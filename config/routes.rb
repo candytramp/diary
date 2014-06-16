@@ -4,11 +4,15 @@ Rails.application.routes.draw do
 
   resources :contact_lists
 
-  resources :tasks
+  resources :tasks do
+    member do
+      get 'show_guests'
+    end
+  end
 
   resources :remarks
 
-  #resources :contacts
+  resources :contacts, only: "show"
 
   resources :users do
     member do

@@ -14,6 +14,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts/new
   def new
+    
     @contact = Contact.new
     @user=User.find(params['user_id'])
     #@user.contact_lists.new(:friend=>@contact)
@@ -28,10 +29,16 @@ class ContactsController < ApplicationController
   # POST /contacts
   # POST /contacts.json
   def create
-    #raise params.inspect
+    #raise params['contact']['task_id'].inspect
     @contact = Contact.new(contact_params)
     @user = User.find(params[:user_id])
-    @user.partners.create!(:friend=>@contact)
+   
+    if params['contact']['task_id']  
+      @task=Task.find(params['contact']['task_id'].to_i)
+      @task.guests.create(:group=>@contact)     
+    else
+      @user.partners.create!(:friend=>@contact)
+    end  
     
     respond_to do |format|
       if @contact.save

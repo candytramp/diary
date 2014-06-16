@@ -1,4 +1,4 @@
-= raise [@user, @contact].inspect
+
 = form_for([@user, @contact]) do |f|
   =error_messages_for @contact
   .form-group 
@@ -24,5 +24,10 @@
   .form-group
     = f.label :phone
     = f.text_field :phone, class: 'form-control'
+  -if params[:flag]=="guest"
+    hidden_field_tag :task_id, params[:task_id]
+    -#.form-group 
+      = f.hidden_field :task_id, {:value=> params[:task_id]}
+      
   .action
     = f.submit nil, class: 'btn btn-primary'

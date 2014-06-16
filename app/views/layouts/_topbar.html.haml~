@@ -8,6 +8,7 @@
       %li{class: ('active' if controller_name=='tasks')}=link_to "Задачи",tasks_path
       %li{class: ('active' if controller_name=='remarks')}=link_to "Заметки",remarks_path
       %li{class: ('active' if controller_name=='contact_lists')}=link_to "Контактный лист",contact_lists_path
+      %li{class: ('active' if controller_name=='task_users')}=link_to "Участник мероприятий",task_users_path
     %ul.nav.navbar-nav.navbar-right
       -if @current_user
         %li.dropdown

@@ -4,16 +4,21 @@ Rails.application.routes.draw do
 
   resources :contact_lists
 
-  resources :tasks
+  resources :tasks do
+    member do
+      get 'show_guests'
+    end
+  end
 
   resources :remarks
 
-  resources :contacts
+  #resources :contacts
 
   resources :users do
     member do
       get 'add'
     end
+    resources :contacts
   end
 
   resources :places

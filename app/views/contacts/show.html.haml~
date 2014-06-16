@@ -1,22 +1,22 @@
 
 
 %p
-  %b First name:
+  %b Имя:
   = @contact.first_name
 %p
-  %b Last name:
+  %b Фамилия:
   = @contact.last_name
 %p
-  %b Second name:
+  %b Отчество:
   = @contact.second_name
 %p
-  %b Email:
+  %b Почта:
   = @contact.email
 %p
-  %b Phone:
+  %b Телефон:
   = @contact.phone
-  -usr=User.find(params[:user_id])
 
-= link_to 'Edit', edit_user_contact_path(usr,@contact)
+
+= link_to 'Редактировать', edit_user_contact_path(@current_user,@contact)
 \|
-= link_to 'Back', contacts_path
+= link_to 'Вернуться', contact_lists_path
