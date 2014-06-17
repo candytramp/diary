@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48fad6c-26f1-41fd-b3cf-4f6296a0a814" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contact_lists/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/contact_lists/_form.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/tasks/_form.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/users/_form.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contacts/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/contacts/edit.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/tasks/edit.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/guest_list.html.haml" afterPath="$PROJECT_DIR$/app/views/tasks/guest_list.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contact_lists/index.html.haml" afterPath="$PROJECT_DIR$/app/views/contact_lists/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/task_users/index.html.haml" afterPath="$PROJECT_DIR$/app/views/task_users/index.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/index.html.haml" afterPath="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contacts/new.html.haml" afterPath="$PROJECT_DIR$/app/views/contacts/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/new.html.haml" afterPath="$PROJECT_DIR$/app/views/tasks/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contacts/show.html.haml" afterPath="$PROJECT_DIR$/app/views/contacts/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/show.html.haml" afterPath="$PROJECT_DIR$/app/views/tasks/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.haml" afterPath="$PROJECT_DIR$/app/views/users/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/task.rb" afterPath="$PROJECT_DIR$/app/models/task.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/tasks.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/tasks.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/users.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/users.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/task_users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/task_users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="diary.iws" />
@@ -31,7 +21,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/diary@Development__diary.coverage" NAME="Development: diary Coverage Results" MODIFIED="1403009768223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="diary" />
+    <SUITE FILE_PATH="coverage/diary@Development__diary.coverage" NAME="Development: diary Coverage Results" MODIFIED="1403020884755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="diary" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -45,46 +35,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/tasks/show.html.haml">
+      <file leaf-file-name="tasks_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="273" selection-end="300" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="405">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/tasks/edit.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="59" selection-start="161" selection-end="161" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="195">
+            <state line="33" column="0" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/contacts/_form.html.haml">
+        <entry file="file://$PROJECT_DIR$/app/views/contact_lists/_form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="9" selection-start="852" selection-end="852" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="570">
+            <state line="9" column="10" selection-start="191" selection-end="191" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.haml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/contacts/edit.html.haml">
+      <file leaf-file-name="edit.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/contact_lists/edit.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="79" selection-start="225" selection-end="225" vertical-scroll-proportion="0.1503006" vertical-offset="0" max-vertical-offset="499">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/contacts/new.html.haml">
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/contact_lists/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="66" selection-start="66" selection-end="66" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180">
+            <state line="25" column="29" selection-start="728" selection-end="728" vertical-scroll-proportion="-4.5416665" vertical-offset="266" max-vertical-offset="855">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/task_users/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="37" selection-start="327" selection-end="327" vertical-scroll-proportion="0.40880504" vertical-offset="0" max-vertical-offset="477">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="95" selection-start="753" selection-end="753" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="525">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/task_users/show.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="270">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="20" selection-start="98" selection-end="98" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="375">
               <folding />
             </state>
           </provider>
@@ -94,24 +111,6 @@
         <entry file="file://$PROJECT_DIR$/app/views/contacts/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="22" selection-start="328" selection-end="328" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="420">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contacts_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="10" selection-start="917" selection-end="945" vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="1455">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="46" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="39" max-vertical-offset="1695">
               <folding />
             </state>
           </provider>
@@ -154,13 +153,18 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/users.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/tasks.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/tasks/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/contacts/edit.html.haml" />
         <option value="$PROJECT_DIR$/app/views/contacts/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/contacts/show.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/tasks/guest_list.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/task_users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/contact_lists/_form.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/contact_lists/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/tasks/_form.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/task_users/index.html.haml" />
       </list>
     </option>
   </component>
@@ -172,8 +176,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
-    <option name="y" value="113" />
+    <option name="x" value="67" />
+    <option name="y" value="98" />
     <option name="width" value="1280" />
     <option name="height" value="971" />
   </component>
@@ -286,6 +290,72 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task_users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -322,6 +392,14 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contact_lists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -334,10 +412,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -654,8 +728,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="113" width="1280" height="971" extended-state="0" />
-    <editor active="false" />
+    <frame x="67" y="98" width="1280" height="971" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16065192" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -663,7 +737,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21103896" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21103896" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4021102" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -793,13 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.2" vertical-offset="0" max-vertical-offset="525">
@@ -835,13 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.20076482" vertical-offset="0" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/task.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.20076482" vertical-offset="0" max-vertical-offset="523">
@@ -852,13 +912,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="23" selection-start="596" selection-end="596" vertical-scroll-proportion="0.7485605" vertical-offset="0" max-vertical-offset="615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="19" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1590">
           <folding />
         </state>
       </provider>
@@ -891,13 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="104" selection-start="762" selection-end="762" vertical-scroll-proportion="0.69138277" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tasks/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="499">
@@ -905,23 +951,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="49" selection-start="394" selection-end="394" vertical-scroll-proportion="0.5182342" vertical-offset="0" max-vertical-offset="521">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/places/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="605" selection-end="605" vertical-scroll-proportion="0.6621881" vertical-offset="0" max-vertical-offset="521">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks/guest_list.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.062992126" vertical-offset="32" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
@@ -947,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contacts/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="328" selection-end="328" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="10" selection-start="917" selection-end="945" vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="1455">
@@ -975,9 +1000,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="98" selection-end="98" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/contacts/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="22" selection-start="328" selection-end="328" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/task_users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.50898206" vertical-offset="675" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks/guest_list.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="68" selection-start="429" selection-end="429" vertical-scroll-proportion="0.30864197" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="29" selection-start="454" selection-end="454" vertical-scroll-proportion="0.6012024" vertical-offset="0" max-vertical-offset="499">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/contacts/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="79" selection-start="225" selection-end="225" vertical-scroll-proportion="0.1503006" vertical-offset="0" max-vertical-offset="499">
+        <state line="8" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.24048096" vertical-offset="0" max-vertical-offset="499">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/contact_lists/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="10" selection-start="191" selection-end="191" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/contact_lists/edit.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="523">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/contact_lists/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="29" selection-start="728" selection-end="728" vertical-scroll-proportion="-4.5416665" vertical-offset="266" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/task_users/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="21" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.83832335" vertical-offset="675" max-vertical-offset="1590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="95" selection-start="753" selection-end="753" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/task_users/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="37" selection-start="327" selection-end="327" vertical-scroll-proportion="0.40880504" vertical-offset="0" max-vertical-offset="477">
           <folding />
         </state>
       </provider>

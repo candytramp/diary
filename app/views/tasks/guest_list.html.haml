@@ -1,12 +1,21 @@
 %h4 Участники
 .list-group
   -@guest_list.each do |guest|
-    =link_to guest.group, class:'list-group-item' do
+    .list-group-item
+      .pull-right
+        =link_to guest.group, class: 'btn btn-info btn-sm' do
+          =fa_icon 'eye'
+        -if (guest.group_type=="Contact")
+          =link_to edit_user_contact_path(@current_user,guest.group_id), class: 'btn btn-primary btn-sm' do
+            =fa_icon 'edit'
+        =link_to guest, method: :delete, data: {confirm: "Вы уверены?"}, class: 'btn btn-danger btn-sm' do
+          =fa_icon 'trash-o'
       =guest.group.full_name
       .text-muted
         =guest.group.email
         %br
           =guest.group_type
+
     .clearfix    
 
 %br

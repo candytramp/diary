@@ -1,12 +1,12 @@
-%h1 Listing contact_lists
+%h1 Сптсок контактов
 
 %table.table
   %tr
    
-    %th FriendType
-    %th FriendName
-    %th FriendLastName
-    %th FriendEmail
+    %th Таблица
+    %th Имя
+    %th Фамилия
+    %th Почта
     %th
     %th
     %th
@@ -23,7 +23,7 @@
         -else
           %td= link_to 'Показать', user_path(contact_list.friend) 
         -#%td= link_to 'Edit', edit_contact_list_path(contact_list)
-        %td= link_to 'Destroy', contact_list, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Удалить', contact_list, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
   .col-sm-6

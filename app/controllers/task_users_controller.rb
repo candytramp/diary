@@ -56,7 +56,7 @@ class TaskUsersController < ApplicationController
   def destroy
     @task_user.destroy
     respond_to do |format|
-      format.html { redirect_to task_users_url, notice: 'Task user was successfully destroyed.' }
+      format.html { redirect_to tasks_path, notice: 'Task user was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
