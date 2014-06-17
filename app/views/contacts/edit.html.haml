@@ -1,7 +1,8 @@
-%h1 Editing contact
+= link_to 'Вернуться', contact_lists_path, class: 'btn btn-default'
+%h1 Редактирование контакта
 
 = render 'form'
 -usr=User.find(params[:user_id])
-= link_to 'Show', user_contact_path(usr,@contact)
-\|
-= link_to 'Back', contact_lists_path
+= link_to 'Показать', user_contact_path(usr,@contact), class: 'btn btn-default'
+
+

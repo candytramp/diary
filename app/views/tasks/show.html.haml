@@ -1,19 +1,21 @@
+= link_to 'Вернуться', tasks_path, class: 'btn btn-default'
+%br
+  %br
+    %p
+      %b Хозяин:
+      = @task.user.first_name
+    %p
+      %b Место:
+      = @task.place.name
+    %p
+      %b Приоритет:
+      = @task.priority
+    %p
+      %b Дата проведения:
+      = @task.date.strftime("%d.%m.%Y %H:%M")
+
+    = link_to 'Приглашенные участники', show_guests_task_path(@task), class: 'btn btn-default'
+    \|
+    = link_to 'Редактировать', edit_task_path(@task), class: 'btn btn-default'
 
 
-%p
-  %b User:
-  = @task.user.first_name
-%p
-  %b Place:
-  = @task.place.name
-%p
-  %b Priority:
-  = @task.priority
-%p
-  %b Date:
-  = @task.date
-= link_to 'Приглашенные участники', show_guests_task_path(@task)
-
-= link_to 'Edit', edit_task_path(@task)
-\|
-= link_to 'Back', tasks_path

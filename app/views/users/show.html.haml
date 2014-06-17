@@ -27,7 +27,9 @@
           = @user.email
         %p
           %b День рождения:
-          = @user.birthday
+          -#= @user.birthday
+          -if !@user.birthday.nil?
+            =@user.birthday.strftime('%d.%m.%Y ')
 
 
 

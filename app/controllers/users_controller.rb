@@ -19,11 +19,13 @@ class UsersController < ApplicationController
     @user=User.find(params[:id])
     if params[:data].to_i == 0 then
       @current_user.partners.create(:friend=>@user)
+      render action: 'show'
     else
       @task=Task.find(params[:task_id].to_i)
       @task.guests.create(:group=>@user)
+      redirect_to show_guests_task_path(@task)
     end      
-    render action: 'show'    
+
   end
 
   # GET /users/new

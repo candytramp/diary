@@ -2,18 +2,28 @@
   =error_messages_for @task
   .form-group
     = f.label :name
-    = f.text_field :name
-  .form-group 
-    = f.label :user
-    = f.text_field :user
+    = f.text_field :name, class: 'form-control'
   .form-group
-    = f.label :place
-    = f.text_field :place
+    = f.hidden_field :user_id, :value=>@current_user.id
+  .form-group
+    = f.label :place_id
+    = f.select :place_id,  Place.all.map{|c| [c.name,c.id]}, {selected: @task.place_id}, {class: 'form-control'}
   .form-group
     = f.label :priority
-    = f.number_field :priority
-  .form-group
+    = f.number_field :priority, class: 'form-control'
+  -#.form-group
     = f.label :date
     = f.datetime_select :date
+  .form-group
+    =f.label :date
+    .container
+      .row
+        .col-sm-6
+          .form-group
+            #datetimepicker2.input-group.date
+              = f.text_field :date, class: 'form-control' ,:value=>(l(@task.date,:format=>"%d\-%m\-%Y %H:%M") if @task.date)
+              %span.input-group-addon
+                %span.glyphicon.glyphicon-calendar
+
   .form-action
     = f.submit nil, class: 'btn btn-primary'

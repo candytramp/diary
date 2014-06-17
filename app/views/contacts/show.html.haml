@@ -1,22 +1,22 @@
-
-
-%p
-  %b Имя:
-  = @contact.first_name
-%p
-  %b Фамилия:
-  = @contact.last_name
-%p
-  %b Отчество:
-  = @contact.second_name
-%p
-  %b Почта:
-  = @contact.email
-%p
-  %b Телефон:
-  = @contact.phone
-
-
-= link_to 'Редактировать', edit_user_contact_path(@current_user,@contact), class: 'btn btn-default'
-\|
 = link_to 'Вернуться', contact_lists_path, class: 'btn btn-default'
+%br
+  %br
+
+    %p
+      %b Имя:
+      = @contact.first_name
+    %p
+      %b Фамилия:
+      = @contact.last_name
+    %p
+      %b Отчество:
+      = @contact.second_name
+    %p
+      %b Почта:
+      = @contact.email
+    %p
+      %b Телефон:
+      = @contact.phone
+
+    = link_to 'Редактировать', edit_user_contact_path(@current_user,@contact), class: 'btn btn-default'
+

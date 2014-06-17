@@ -35,14 +35,16 @@ class ContactsController < ApplicationController
    
     if params['contact']['task_id']  
       @task=Task.find(params['contact']['task_id'].to_i)
-      @task.guests.create(:group=>@contact)     
+      @task.guests.create(:group=>@contact)
+      url=show_guests_task_path(@task)
     else
       @user.partners.create!(:friend=>@contact)
+      url=contact_lists_path
     end  
     
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to contact_lists_path, notice: 'Contact was successfully created.' }
+        format.html { redirect_to url, notice: 'Контакт был успешно создан.' }
         format.json { render :show, status: :created, location: @contact }
       else
         format.html { render :new }
@@ -57,7 +59,7 @@ class ContactsController < ApplicationController
     @user = User.find(params[:user_id].to_i)
     respond_to do |format|
       if @contact.update(contact_params)
-        format.html { redirect_to contact_lists_path, notice: 'Contact was successfully updated.' }
+        format.html { redirect_to contact_lists_path, notice: 'Контакт был успешно обновлен.' }
         format.json { render :show, status: :ok, location: @contact }
       else
         format.html { render :edit }
@@ -71,7 +73,7 @@ class ContactsController < ApplicationController
   def destroy
     @contact.destroy
     respond_to do |format|
-      format.html { redirect_to user_contacts_url, notice: 'Contact was successfully destroyed.' }
+      format.html { redirect_to user_contacts_url, notice: 'Контакт был успешно удален.' }
       format.json { head :no_content }
     end
   end
