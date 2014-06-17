@@ -1,7 +1,7 @@
 %h1 Редатирование моих данных 
 
 = render 'form'
-
-= link_to 'Показать', @user
-\|
-= link_to 'Назад', users_path
+%br
+  = link_to 'Показать', @user, class: 'btn btn-default'
+  \|
+  = link_to 'Назад', users_path, class: 'btn btn-default'

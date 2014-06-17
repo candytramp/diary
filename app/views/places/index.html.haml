@@ -1,23 +1,23 @@
-%h1 Listing places
+%h1
+  Список мест
+  = link_to 'Добавить место', new_place_path, class: 'btn btn-primary'
 
-%table
-  %tr
-    %th Name
-    %th Address
-    %th Description
-    %th 
-    %th
-    %th
-
+.list-group
   - @places.each do |place|
-    %tr
-      %td= place.name
-      %td= place.address
-      %td= place.description
-      %td= link_to 'Show', place
-      %td= link_to 'Edit', edit_place_path(place)
-      %td= link_to 'Destroy', place, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    .list-group-item
+      .pull-right
+        =link_to place, class: 'btn btn-info btn-sm' do
+          =fa_icon 'eye'
+        -if (@current_user.id == place.user_id)
+          =link_to edit_place_path(place), class: 'btn btn-primary btn-sm' do
+            =fa_icon 'edit'
+          =link_to place, method: :delete, data: {confirm: "Вы уверены?"}, class: 'btn btn-danger btn-sm' do
+            =fa_icon 'trash-o'
+      %h4= place.name
+      .text-muted= place.address
 
-%br
 
-= link_to 'New Place', new_place_path
+
+
+
+

@@ -1,5 +1,9 @@
-%h1 Мои заметки
+%h1
+  Мои заметки
+  =link_to 'Новая заметка', new_remark_path, class: 'btn btn-primary'
+
 %body
+
   %row-fluid
     %container-fluid
       -if (@current_user)
@@ -10,11 +14,17 @@
                 .col-md-12
                   %p 
                     %b Тема
-                    =remark.topic
+                    -if remark.topic.to_s.length >23
+                      =remark.topic.to_s[0..22]+"..."
+                    -else
+                      =remark.topic.to_s
                   %p 
                     %b Описание      
                     %br
-                      = remark.description
+                      -if  remark.description.to_s.length > 23
+                        = remark.description.to_s[0..22]+"..."
+                      -else
+                        = remark.description
                   =link_to remark, class: 'btn btn-info btn-sm' do
                     =fa_icon 'eye'        
                   =link_to edit_remark_path(remark), class: 'btn btn-primary btn-sm' do
@@ -23,6 +33,7 @@
                     =fa_icon 'trash-o'    
                     
                     
-%br
 
-= link_to 'Новая заметка', new_remark_path, class: 'btn btn-primary'
+
+
+

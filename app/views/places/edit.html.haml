@@ -1,7 +1,7 @@
-%h1 Editing place
+%h1 Редактирование места
 
 = render 'form'
-
-= link_to 'Show', @place
-\|
-= link_to 'Back', places_path
+%br
+  = link_to 'Показать', @place, class: 'btn btn-default'
+  \|
+  = link_to 'Вернуться', places_path, class: 'btn btn-default'

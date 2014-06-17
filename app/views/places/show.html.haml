@@ -1,12 +1,16 @@
-%p#notice= notice
+= link_to 'Вернуться', places_path, class: 'btn btn-default'
+%br
+  %br
+    %p
+      %b Название:
+      = @place.name
+    %p
+      %b Адрес:
+      = @place.address
+    %p
+      %b Описание:
+      = @place.description
 
-%p
-  %b Address:
-  = @place.address
-%p
-  %b Description:
-  = @place.description
+-#= link_to 'Редактировать', edit_place_path(@place), class: 'btn btn-default'
+  \|
 
-= link_to 'Edit', edit_place_path(@place)
-\|
-= link_to 'Back', places_path

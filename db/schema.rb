@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140614201640) do
+ActiveRecord::Schema.define(version: 20140617094408) do
 
   create_table "contact_lists", force: true do |t|
     t.integer  "user_id"
@@ -41,7 +41,10 @@ ActiveRecord::Schema.define(version: 20140614201640) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
+    t.integer  "user_id"
   end
+
+  add_index "places", ["user_id"], name: "index_places_on_user_id"
 
   create_table "remarks", force: true do |t|
     t.integer  "user_id"

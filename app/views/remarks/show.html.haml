@@ -1,11 +1,13 @@
-
-%p
-  %b Тема:
-  = @remark.topic
-%p
-  %b Описание:
-  = @remark.description
-
-= link_to 'Редактировать', edit_remark_path(@remark), class: 'btn btn-default'
-\|
 = link_to 'Вернуться', remarks_path, class: 'btn btn-default'
+%br
+  %br
+    %p
+      %b Тема:
+      = @remark.topic
+    %p
+      %b Описание:
+      = @remark.description
+
+-#= link_to 'Редактировать', edit_remark_path(@remark), class: 'btn btn-default'
+  \|
+

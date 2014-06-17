@@ -1,19 +1,16 @@
 = form_for @place do |f|
-  - if @place.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@place.errors.count, "error")} prohibited this place from being saved:"
-      %ul
-        - @place.errors.full_messages.each do |msg|
-          %li= msg
+  =error_messages_for @place
 
-  .field
+  .form-group
+    = f.hidden_field :user_id, :value=>@current_user.id
+  .form-group
     = f.label :name
-    = f.text_field :name
-  .field
+    = f.text_field :name, class: 'form-control'
+  .form-group
     = f.label :address
-    = f.text_field :address
-  .field
+    = f.text_field :address, class: 'form-control'
+  .form-group
     = f.label :description
-    = f.text_area :description
-  .actions
-    = f.submit 'Save'
+    = f.text_area :description, class: 'form-control'
+  .form-action
+    = f.submit 'Создать', class: 'btn btn-primary'
