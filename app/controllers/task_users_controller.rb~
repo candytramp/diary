@@ -1,6 +1,6 @@
 class TaskUsersController < ApplicationController
   before_action :set_task_user, only: [:show, :edit, :update, :destroy]
-
+  before_action :require_login, except: [:show, :index]
   # GET /task_users
   # GET /task_users.json
   def index
@@ -14,7 +14,7 @@ class TaskUsersController < ApplicationController
 
   # GET /task_users/new
   def new
-    @task_user = TaskUser.new
+    @task_user = TaskUser.includes(:group, :task).new
   end
 
   # GET /task_users/1/edit
@@ -42,7 +42,7 @@ class TaskUsersController < ApplicationController
   def update
     respond_to do |format|
       if @task_user.update(task_user_params)
-        format.html { redirect_to @task_user, notice: 'Task user was successfully updated.' }
+        format.html { redirect_to @task_user, notice: 'Привязан к делу.' }
         format.json { render :show, status: :ok, location: @task_user }
       else
         format.html { render :edit }
@@ -54,9 +54,13 @@ class TaskUsersController < ApplicationController
   # DELETE /task_users/1
   # DELETE /task_users/1.json
   def destroy
+    if  @task_user.group_type == "Contact" 
+        @contact = Contact.find(@task_user.group_id)
+        @contact.destroy
+    end
     @task_user.destroy
     respond_to do |format|
-      format.html { redirect_to task_users_url, notice: 'Task user was successfully destroyed.' }
+      format.html { redirect_to tasks_path, notice: 'Отвязан от дела.' }
       format.json { head :no_content }
     end
   end

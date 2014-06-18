@@ -1,6 +1,6 @@
 class ContactListsController < ApplicationController
-  before_action :set_contact_list, only: [:index, :show, :edit, :update, :destroy]
-  before_action :require_login, except: [:show, :index]
+  before_action :set_contact_list, only: [:show, :edit, :update, :destroy]
+  before_action :require_login, except: [:show]
   # GET /contact_lists
   # GET /contact_lists.json
   def index
