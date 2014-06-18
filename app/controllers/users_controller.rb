@@ -15,16 +15,10 @@ class UsersController < ApplicationController
   end
   
   def add
-  #raise params.inspect
+    #raise params.inspect
     @user=User.find(params[:id])
-    if params[:data].to_i == 0 then
-      @current_user.partners.create(:friend=>@user)
-      render action: 'show'
-    else
-      @task=Task.find(params[:task_id].to_i)
-      @task.guests.create(:group=>@user)
-      redirect_to show_guests_task_path(@task)
-    end      
+    @current_user.partners.create(:friend=>@user)
+    render action: 'show'
 
   end
 
@@ -39,7 +33,7 @@ class UsersController < ApplicationController
 
  def search
 
-  @query = params[:search_pattern].to_s.strip!
+  @query = params[:search_pattern].to_s.strip
   if @query.to_s != ''
     @users = User.where(["first_name LIKE ? OR last_name LIKE ? 
              OR second_name LIKE ? OR email LIKE ?", 

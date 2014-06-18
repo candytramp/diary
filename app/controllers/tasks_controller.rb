@@ -68,6 +68,26 @@ class TasksController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def addusr
+    @user=@current_user
+    @task=Task.find(params[:task_id].to_i)
+    @task.guests.create(:group=>@user)
+    redirect_to show_guests_task_path(@task)
+  end
+
+  def search_usr
+
+    @query = params[:search_pattern].to_s.strip
+    if @query.to_s != ''
+      @users = User.where(["first_name LIKE ? OR last_name LIKE ?
+             OR second_name LIKE ? OR email LIKE ?",
+                           "%" + @query + "%", "%" + @query + "%", "%" + @query + "%", "%" + @query + "%"])
+
+    else
+      @users = User.all
+    end
+    render action: 'task_add_user'
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

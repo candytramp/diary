@@ -1,6 +1,7 @@
 %h1
   Список мест
-  = link_to 'Добавить место', new_place_path, class: 'btn btn-primary'
+  -if @current_user
+    = link_to 'Добавить место', new_place_path, class: 'btn btn-primary'
 
 .list-group
   - @places.each do |place|
@@ -8,7 +9,7 @@
       .pull-right
         =link_to place, class: 'btn btn-info btn-sm' do
           =fa_icon 'eye'
-        -if (@current_user.id == place.user_id)
+        -if (@current_user && @current_user.id == place.user_id)
           =link_to edit_place_path(place), class: 'btn btn-primary btn-sm' do
             =fa_icon 'edit'
           =link_to place, method: :delete, data: {confirm: "Вы уверены?"}, class: 'btn btn-danger btn-sm' do

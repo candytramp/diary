@@ -81,5 +81,7 @@ Rails.application.routes.draw do
   post 'login'=>"sessions#create"
   get 'logout'=>"sessions#destroy", as: :logout
   get 'search'=>"users#search"
+  get 'search_usr'=>"tasks#search_usr"
   get 'add'=>"users#add"
+
 end

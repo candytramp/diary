@@ -17,5 +17,7 @@
 //= require jquery.maskedinput.min
 //= require jquery.tokeninput
 //= require moment
+//= require moment/ru
 //= require bootstrap-datetimepicker
+//= require locales/bootstrap-datetimepicker.ru.js
 //= require_tree .
