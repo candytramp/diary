@@ -4,7 +4,7 @@ class TaskUsersController < ApplicationController
   # GET /task_users
   # GET /task_users.json
   def index
-    @task_users = TaskUser.all
+    @task_users = TaskUser.includes(:group).all
   end
 
   # GET /task_users/1
