@@ -21,7 +21,7 @@
 %br
   .col-sm-6
     
-    %form{action: "/search_usr", controller: "taks", role: "search_usr"}
+    %form{action: "search_usr", controller: "taks", role: "search_usr", data: @task.id}
       .form-group
         %label Искать среди существующих пользователей
         %input#search_pattern.form-control{name: "search_pattern", placeholder: "Поиск", type: "text"}/

@@ -1,0 +1,15 @@
+%h1 Условиям поиска удовлетворяют следующие пользователи
+
+
+.list-group
+  -@users.each do |user|
+    .list-group-item
+      .pull-right
+        =link_to addusr_task_path(user, task_id: params[:id]), class: 'btn btn-info btn-sm' do
+          =fa_icon 'plus'
+      %h4=user.full_name
+      .text-muted=user.email
+
+
+      .clearfix
+

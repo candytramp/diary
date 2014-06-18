@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   resources :tasks do
     member do
       get 'show_guests'
+      get 'search_usr'
+      get 'addusr'
     end
   end
 
@@ -81,7 +83,7 @@ Rails.application.routes.draw do
   post 'login'=>"sessions#create"
   get 'logout'=>"sessions#destroy", as: :logout
   get 'search'=>"users#search"
-  get 'search_usr'=>"tasks#search_usr"
+
   get 'add'=>"users#add"
 
 end

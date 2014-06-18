@@ -69,8 +69,9 @@ class TasksController < ApplicationController
     end
   end
   def addusr
-    @user=@current_user
-    @task=Task.find(params[:task_id].to_i)
+    #raise params.inspect
+    @user=User.find(params[:id])
+    @task=Task.find(params[:task_id])
     @task.guests.create(:group=>@user)
     redirect_to show_guests_task_path(@task)
   end
@@ -86,7 +87,7 @@ class TasksController < ApplicationController
     else
       @users = User.all
     end
-    render action: 'task_add_user'
+    render action: 'addusr'
   end
 
   private
