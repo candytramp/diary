@@ -72,9 +72,9 @@ class TasksController < ApplicationController
     #raise params.inspect
     @user=User.find(params[:id])
     @task=Task.find(params[:task_id])
-   
+    if !@task.guests.where(:group=>@user).first
       @task.guests.create(:group=>@user)
-  
+    end
     redirect_to show_guests_task_path(@task)
   end
 
