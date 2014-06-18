@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     #raise params.inspect
     @user=User.find(params[:id])
     @current_user.partners.create(:friend=>@user)
-    render action: 'show'
+    redirect_to contact_lists_path
 
   end
 

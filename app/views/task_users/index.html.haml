@@ -13,9 +13,9 @@
       %tr
         -if task_list.task
           %td= task_list.task.user.try(:first_name)
-          %td= link_to 'Show', task_path(task_list.task)
+          %td= link_to 'Показать', task_path(task_list.task)
           -#%td= link_to 'Edit', edit_task_uspath(task_user)
-          %td= link_to 'Отвязаться от дела', task_list, :method => :delete, :data => { :confirm => 'Are you sure?' }
+          %td= link_to 'Отвязаться от дела', task_list, :method => :delete, :data => { :confirm => 'Вы уверены?' }
 
 %br
 

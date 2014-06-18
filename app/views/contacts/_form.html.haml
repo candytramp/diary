@@ -21,7 +21,7 @@
   .form-group      
     =f.label :email
     =f.text_field :email, class: 'form-control'
-  .form-group
+  .form-group#phone
     = f.label :phone
     = f.text_field :phone, class: 'form-control'
   -if params[:flag]=="guest"

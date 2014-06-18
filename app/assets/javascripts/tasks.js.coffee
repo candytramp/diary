@@ -5,8 +5,7 @@ ready=->
   $("#datetimepicker2").datetimepicker
 
     language: 'ru'
-
-
+ 
 
 $(document).ready ready
 $(document).on 'page:load', ready

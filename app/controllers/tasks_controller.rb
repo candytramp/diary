@@ -72,7 +72,9 @@ class TasksController < ApplicationController
     #raise params.inspect
     @user=User.find(params[:id])
     @task=Task.find(params[:task_id])
-    @task.guests.create(:group=>@user)
+   
+      @task.guests.create(:group=>@user)
+  
     redirect_to show_guests_task_path(@task)
   end
 

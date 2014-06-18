@@ -4,7 +4,7 @@ class ContactListsController < ApplicationController
   # GET /contact_lists
   # GET /contact_lists.json
   def index
-    @contact_lists = ContactList.all
+    @contact_lists = ContactList.includes(:friend).all
   end
 
   # GET /contact_lists/1
@@ -28,7 +28,7 @@ class ContactListsController < ApplicationController
 
     respond_to do |format|
       if @contact_list.save
-        format.html { redirect_to @contact_list, notice: 'Contact list was successfully created.' }
+        format.html { redirect_to @contact_list, notice: 'Контакт добавлен.' }
         format.json { render :show, status: :created, location: @contact_list }
       else
         format.html { render :new }
@@ -60,7 +60,7 @@ class ContactListsController < ApplicationController
      end
     @contact_list.destroy
     respond_to do |format|
-      format.html { redirect_to contact_lists_url, notice: 'Contact list was successfully destroyed.' }
+      format.html { redirect_to contact_lists_url, notice: 'Контакт удален.' }
       format.json { head :no_content }
     end
   end
