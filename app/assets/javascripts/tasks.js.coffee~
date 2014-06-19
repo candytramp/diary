@@ -6,7 +6,6 @@ ready=->
 
     language: 'ru'
   #document.write document.getElementById('table1').rows[1].cells[3].innerText  
-  
   $("#rows").css("background-color", "#75f1b8")
  
  

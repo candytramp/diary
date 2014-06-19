@@ -1,25 +1,29 @@
 %h1 Мои дела
 
-%table.table-striped.table-condensed
+
+%table.table.table-striped#table1
   %tr
     %th Имя дела
-    %th Место проведения 
+    %th Место проведения
     %th Приоритет выполнения 
     %th Дата проведения
+    %th Количество участников
+    %th
     %th
     %th
     %th
   -if (@current_user)
-    - @tasks.where("user_id = ?",@current_user.id).each do |task|
-      %tr
+    - @tasks.where("user_id = ? and date > ?",@current_user.id, Date.today-1.day ).each do |task|
+      %tr#rows
         %td= task.name
         %td= task.place.name
         %td= task.priority
-        %td= task.date
+        %td= task.date.strftime("%d.%m.%Y %H:%M")
+        %td= task.guests.size
+        %td= link_to 'Приглашенные участники', show_guests_task_path(task)
         %td= link_to 'Показать', task
         %td= link_to 'Редактировать', edit_task_path(task)
         %td= link_to 'Удалить', task, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
-
-= link_to 'Новое дело', new_task_path
+  = link_to 'Новое дело', new_task_path, class: 'btn btn-primary'

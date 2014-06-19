@@ -6,10 +6,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/bootstrap-datetimepicker.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/bootstrap-datetimepicker.ru.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/moment.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/contact_lists_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/contact_lists_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/task_users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/task_users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/index.html.haml" afterPath="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/task.rb" afterPath="$PROJECT_DIR$/app/models/task.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/tasks.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/tasks.js.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="diary.iws" />
@@ -36,28 +36,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="places_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/places_controller.rb">
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/task_users/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="42" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1200">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact_lists_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/contact_lists_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1260">
+            <state line="5" column="26" selection-start="91" selection-end="91" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/task_users/index.html.haml">
+        <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="26" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="420">
+            <state line="16" column="21" selection-start="354" selection-end="354" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="525">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.3544776" vertical-offset="0" max-vertical-offset="804">
               <folding />
             </state>
           </provider>
@@ -90,10 +90,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="4" selection-start="490" selection-end="490" vertical-scroll-proportion="0.18442623" vertical-offset="225" max-vertical-offset="1635">
+            <state line="22" column="4" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1650">
+              <folding>
+                <marker date="1403160807276" expanded="true" signature="21:2653" placeholder=" ... end" />
+                <marker date="1403160807276" expanded="true" signature="115:204" placeholder="#..." />
+                <marker date="1403160807276" expanded="true" signature="259:295" placeholder="#..." />
+                <marker date="1403160807276" expanded="true" signature="331:606" placeholder=" ... end" />
+                <marker date="1403160807276" expanded="true" signature="1075:1109" placeholder="#..." />
+                <marker date="1403160807276" expanded="true" signature="1588:1636" placeholder="#..." />
+                <marker date="1403160807276" expanded="true" signature="2023:2065" placeholder="#..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/task.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
@@ -111,16 +128,7 @@
       <file leaf-file-name="task_users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/task_users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="41" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1200">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="42" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="420">
+            <state line="28" column="26" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
@@ -169,7 +177,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/tasks/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/models/task.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/tasks/task_add_user.html.haml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -178,11 +185,13 @@
         <option value="$PROJECT_DIR$/app/views/tasks/addusr.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/tasks_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/tasks/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/task_users/index.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/contact_lists_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/task_users_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/models/task.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       </list>
     </option>
   </component>
@@ -224,8 +233,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -353,6 +362,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -575,28 +602,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1280" height="971" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="25" width="1280" height="971" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26948053" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27353895" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4021102" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32942554" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25913242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16065192" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -618,11 +645,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/places/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="77" selection-end="77" vertical-scroll-proportion="0.059642147" vertical-offset="0" max-vertical-offset="503" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/places/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="49" selection-start="454" selection-end="454" vertical-scroll-proportion="0.42857143" vertical-offset="0" max-vertical-offset="525" />
@@ -778,11 +800,6 @@
         <state line="30" column="47" selection-start="875" selection-end="891" vertical-scroll-proportion="0.27419356" vertical-offset="297" max-vertical-offset="855" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/task.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="40" selection-start="111" selection-end="111" vertical-scroll-proportion="0.077319585" vertical-offset="0" max-vertical-offset="582" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="18" selection-start="214" selection-end="214" vertical-scroll-proportion="0.25773194" vertical-offset="0" max-vertical-offset="1425" />
@@ -796,11 +813,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/tasks/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="301" selection-end="301" vertical-scroll-proportion="0.4032258" vertical-offset="0" max-vertical-offset="558" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="29" selection-start="494" selection-end="494" vertical-scroll-proportion="0.5645161" vertical-offset="0" max-vertical-offset="558" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tasks/guest_list.html.haml">
@@ -839,21 +851,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/contact_lists_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
+        <state line="10" column="29" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/task_users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="41" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/task_users/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="26" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="420">
+        <state line="28" column="26" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1380">
           <folding />
         </state>
       </provider>
@@ -888,7 +893,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="4" selection-start="490" selection-end="490" vertical-scroll-proportion="0.18442623" vertical-offset="225" max-vertical-offset="1635">
+        <state line="22" column="4" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1650">
+          <folding>
+            <marker date="1403160807276" expanded="true" signature="21:2653" placeholder=" ... end" />
+            <marker date="1403160807276" expanded="true" signature="115:204" placeholder="#..." />
+            <marker date="1403160807276" expanded="true" signature="259:295" placeholder="#..." />
+            <marker date="1403160807276" expanded="true" signature="331:606" placeholder=" ... end" />
+            <marker date="1403160807276" expanded="true" signature="1075:1109" placeholder="#..." />
+            <marker date="1403160807276" expanded="true" signature="1588:1636" placeholder="#..." />
+            <marker date="1403160807276" expanded="true" signature="2023:2065" placeholder="#..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/task_users/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="26" selection-start="91" selection-end="91" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/task.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="21" selection-start="354" selection-end="354" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.3544776" vertical-offset="0" max-vertical-offset="804">
           <folding />
         </state>
       </provider>

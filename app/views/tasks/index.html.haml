@@ -1,7 +1,7 @@
 %h1 Мои дела
 
 
-%table.table.table-striped
+%table.table.table-striped#table1
   %tr
     %th Имя дела
     %th Место проведения
@@ -14,7 +14,7 @@
     %th
   -if (@current_user)
     - @tasks.where("user_id = ? and date > ?",@current_user.id, Date.today-1.day ).each do |task|
-      %tr
+      %tr{:class=>"#{task.definition_class(task.date)}"}
         %td= task.name
         %td= task.place.name
         %td= task.priority
