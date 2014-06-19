@@ -6,11 +6,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/bootstrap-datetimepicker.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/bootstrap-datetimepicker.ru.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/moment.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/index.html.haml" afterPath="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/task.rb" afterPath="$PROJECT_DIR$/app/models/task.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/tasks.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/tasks.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="diary.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,10 +50,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.3544776" vertical-offset="0" max-vertical-offset="804">
+            <state line="19" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.js.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tasks.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="279" selection-end="279" vertical-scroll-proportion="0.1342711" vertical-offset="0" max-vertical-offset="782">
               <folding />
             </state>
           </provider>
@@ -125,15 +130,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task_users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/task_users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="26" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1380">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -165,7 +161,6 @@
         <option value="$PROJECT_DIR$/app/views/tasks/edit.html.haml" />
         <option value="$PROJECT_DIR$/app/views/tasks/new.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/users.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/tasks.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/contacts/edit.html.haml" />
         <option value="$PROJECT_DIR$/app/views/contacts/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/contacts/show.html.haml" />
@@ -192,6 +187,7 @@
         <option value="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
         <option value="$PROJECT_DIR$/app/models/task.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/tasks.js.coffee" />
       </list>
     </option>
   </component>
@@ -411,7 +407,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,6 +426,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -602,7 +602,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1280" height="971" extended-state="1" />
+    <frame x="0" y="25" width="1280" height="971" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -610,7 +610,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27353895" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27272728" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4021102" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -703,11 +703,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/users.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.2581262" vertical-offset="0" max-vertical-offset="523" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tasks.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="279" selection-end="279" vertical-scroll-proportion="0.20076482" vertical-offset="0" max-vertical-offset="523" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tasks/new.html.haml">
@@ -929,7 +924,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.3544776" vertical-offset="0" max-vertical-offset="804">
+        <state line="19" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tasks.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="279" selection-end="279" vertical-scroll-proportion="0.1342711" vertical-offset="0" max-vertical-offset="782">
           <folding />
         </state>
       </provider>
