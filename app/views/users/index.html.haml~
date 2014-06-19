@@ -16,30 +16,4 @@
      
      
       .clearfix 
-      
-%table.table-striped.full
-  %tr
-    %th Имя
-    %th Отчество
-    %th Фамилия
-    %th Пол 
-    %th Дата рождения
-    %th
-    %th
-    %th
 
-  - @users.each do |user|
-    %tr
-      %td= user.first_name
-      %td= user.second_name
-      %td= user.last_name
-      %td= user_sex(user)
-      %td= user.birthday
-      -if (user.id == @current_user.id)
-        %td= link_to 'Показать', user
-        %td= link_to 'Редактировать', edit_user_path(user)
-        %td= link_to 'Удалить', user, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
--#= link_to 'New User', new_user_path

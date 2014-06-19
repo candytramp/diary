@@ -12,10 +12,11 @@
     - @task_users.where("group_type LIKE \"User\" AND group_id = ?",@current_user.id).each do |task_list|
       %tr
         -if task_list.task
+          %td= task_list.task.name
           %td= task_list.task.user.try(:first_name)
           %td= link_to 'Показать', task_path(task_list.task)
           -#%td= link_to 'Edit', edit_task_uspath(task_user)
-          %td= link_to 'Отвязаться от дела', task_user_path(cont_list: 1), :method => :delete, :data => { :confirm => 'Вы уверены?' }
+          %td= link_to 'Отвязаться от дела', task_user_path(task_list,cont_list: 1), :method => :delete, :data => { :confirm => 'Вы уверены?' }
 
 %br
 

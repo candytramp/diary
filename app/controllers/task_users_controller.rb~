@@ -4,7 +4,7 @@ class TaskUsersController < ApplicationController
   # GET /task_users
   # GET /task_users.json
   def index
-    @task_users = TaskUser.all
+    @task_users = TaskUser.includes(:task, :group).all
   end
 
   # GET /task_users/1
@@ -62,9 +62,10 @@ class TaskUsersController < ApplicationController
     if params[:cont_list].to_i==1 
       url=task_users_path
     else
+      @task=@task_user.task
       url=show_guests_task_path(@task)
     end    
-    @task=@task_user.task
+   
     @task_user.destroy
     respond_to do |format|
       format.html { redirect_to url, notice: 'Отвязан от дела.' }
