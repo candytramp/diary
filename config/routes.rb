@@ -1,8 +1,9 @@
 # -*- encoding : utf-8 -*-
 Rails.application.routes.draw do
-  resources :task_users
 
-  resources :contact_lists
+  resources :task_users, except: ["create", "edit", "new", "show"]
+
+  resources :contact_lists, except: ["create", "edit", "new", "show"]
 
   resources :tasks do
     member do
@@ -29,7 +30,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'tasks#index'
+   root 'users#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

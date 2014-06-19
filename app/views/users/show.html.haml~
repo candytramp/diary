@@ -1,27 +1,37 @@
-%p#notice= notice
-%h1
-  =@user.first_name
-  =user_sex_icon(@user)
-%p
-  %b First name:
-  = @user.first_name
-%p
-  %b Last name:
-  = @user.last_name
-%p
-  %b Second name:
-  = @user.second_name
-%p
-  %b Male:
-  =user_sex(@user)
-%p
-  %b E&ndash;mail:
-  = @user.email
-%p
-  %b Birthday:
-  = @user.birthday
-   
+=link_to_back
 
-= link_to 'Edit', edit_user_path(@user)
-\|
-= link_to 'Back', users_path
+= link_to 'К списку пользователей', users_path, class: 'btn btn-default'
+%br
+  %br
+    .row
+      .col-sm-3
+        -if @user.avatar?
+          =image_tag @user.avatar.url(:medium), alt: @user.first_name
+      .col-sm-9
+        %p
+          %h1
+            =@user.first_name
+            =user_sex_icon(@user)
+        %p
+          %b Имя:
+          = @user.first_name
+        %p
+          %b Фамилия:
+          = @user.last_name
+        %p
+          %b Отчество:
+          = @user.second_name
+        %p
+          %b Пол:
+          =user_sex(@user)
+        %p
+          %b E&ndash;mail:
+          = @user.email
+        %p
+          %b День рождения:
+          -#= @user.birthday
+          -if !@user.birthday.nil?
+            =@user.birthday.strftime('%d.%m.%Y ')
+
+
+

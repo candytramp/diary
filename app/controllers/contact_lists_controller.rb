@@ -54,6 +54,7 @@ class ContactListsController < ApplicationController
   # DELETE /contact_lists/1
   # DELETE /contact_lists/1.json
   def destroy
+  #raise params.inspect
      if @contact_list.friend_type == "Contact" 
         @contact = Contact.find(@contact_list.friend_id)
         @contact.destroy

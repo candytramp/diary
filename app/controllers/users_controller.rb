@@ -17,9 +17,10 @@ class UsersController < ApplicationController
   def add
     #raise params.inspect
     @user=User.find(params[:id])
-    if !@current_user.partners.where(:friend=>@user).first
-      @current_user.partners.create(:friend=>@user)
-    end  
+    #if !@current_user.partners.where(:friend=>@user).first
+     # @current_user.partners.create(:friend=>@user)
+    #end  
+    @current_user.partners.create(:friend=>@user)
     redirect_to contact_lists_path
 
   end

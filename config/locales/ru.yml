@@ -46,5 +46,7 @@ ru:
         email: Почта
         phone: Телефон
         avatar: Фото
+        password: Пароль
+        password_confirmation: Подтвержение пароля
               
           

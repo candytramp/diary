@@ -42,9 +42,9 @@ ru:
         last_name: Фамилия
         second_name: Отчество
         male: Пол
-        birthday:День рождения
-        email:Почта
-        phone:Телефон
-        
+        birthday: День рождения
+        email: Почта
+        phone: Телефон
+        avatar: Фото
               
           

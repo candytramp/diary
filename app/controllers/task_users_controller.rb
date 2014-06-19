@@ -54,14 +54,21 @@ class TaskUsersController < ApplicationController
   # DELETE /task_users/1
   # DELETE /task_users/1.json
   def destroy
+  #raise params[:cont_list].inspect
     if  @task_user.group_type == "Contact" 
         @contact = Contact.find(@task_user.group_id)
         @contact.destroy
     end
-    @task=@task_user.task
+    if params[:cont_list].to_i==1 
+      url=task_users_path
+    else
+      @task=@task_user.task
+      url=show_guests_task_path(@task)
+    end    
+   
     @task_user.destroy
     respond_to do |format|
-      format.html { redirect_to show_guests_task_path(@task), notice: 'Отвязан от дела.' }
+      format.html { redirect_to url, notice: 'Отвязан от дела.' }
       format.json { head :no_content }
     end
   end
